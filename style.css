@@ -1,0 +1,215 @@
+
+html, body{
+	color: #121112;
+	font-family: Verdana;
+	background-color: #dddddd;
+	line-height: 1.5;
+    min-width:290px;
+
+}
+#myBtn {
+   -webkit- display: none;
+ -webkit- position: fixed;
+  -webkit- position: fixed;
+   -webkit- bottom: 20px;
+   -webkit- right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #fff;
+  color:#333;
+  position: fixed;
+}
+
+
+.wrapper{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.side-bar{
+
+flex: 1;
+
+}
+.main-content{
+  flex:3;
+  height: 650px;
+  margin-left: 60px;
+  }
+
+
+#navbar{
+	position: fixed;
+	min-width:290px;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	border-right: solid;
+	border-color:rgba(0,22,22,0.4)
+}
+
+#navbar header{
+	margin:0;
+  padding: 10px;
+}
+header{
+  font-size: 1.5em;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  
+
+}
+
+#navbar ul{
+  height:100%;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+#navbar li{
+	list-style: none;
+	border:1px solid;
+	border-bottom-width: 0px;
+	padding: .5em;
+	margin: 0;
+	padding-left: 45px;
+	position: relative;
+	left: -50px;
+	width: 100%;
+}
+#navbar li:hover{
+	background-color: #333;
+	color: #fff;
+}
+#navbar a{
+	text-decoration: none;
+	color: #121112;
+  cursor: pointer;
+}
+
+
+
+article{
+	padding: .8em;
+}
+
+section li{
+    margin: 0.6em 0em 0em 1em;
+}
+
+ code{
+	background-color:#f0f0f0;
+  margin: .8em;
+	padding: .7em;
+	width: 95%;
+	display: block;
+	border-radius: 5px;
+	white-space: pre;
+    line-height: 2;
+}
+
+
+
+
+@media only screen and (max-width: 320px) {
+
+header{
+  text-align: center;
+}
+  code{
+      margin-left: -20px;
+    width: 90%;
+    padding: 15px;
+  
+    padding-right: 45px;
+    min-width: 233px;
+    }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+}
+
+@media  screen and (max-width: 60rem) {
+	
+	#JS-Documentation{
+		text-align: center;
+    position: fixed;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+  }
+#navbar{
+  text-align: center;
+}
+	#navbar ul{
+  border:1px solid;
+    height:207px;
+    margin-top: 50px;
+  }
+   #navbar{
+    border-right: none;
+    width: 100%;
+    position: static;
+    top: 0;
+    margin: 0;
+    }
+
+ .main-content{
+ 
+  margin-left: 0;
+ }
+ .wrapper{
+  flex-flow: column;
+ }
+  
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #333; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+}
+
+
